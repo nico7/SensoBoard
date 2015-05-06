@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "SensoBoard", "SensoBoard\SensoBoard.cproj", "{511D0667-FB1F-4A62-8C5F-FB6501B8AE97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{511D0667-FB1F-4A62-8C5F-FB6501B8AE97}.Debug|ARM.ActiveCfg = Debug|ARM
+		{511D0667-FB1F-4A62-8C5F-FB6501B8AE97}.Debug|ARM.Build.0 = Debug|ARM
+		{511D0667-FB1F-4A62-8C5F-FB6501B8AE97}.Release|ARM.ActiveCfg = Release|ARM
+		{511D0667-FB1F-4A62-8C5F-FB6501B8AE97}.Release|ARM.Build.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
