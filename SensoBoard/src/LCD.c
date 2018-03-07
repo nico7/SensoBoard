@@ -10,9 +10,7 @@
 
 void turnLCDon(void)
 {
-
 	pio_clear(LCDPower);
-
 }
 
 void turnLCDoff(void)
@@ -22,25 +20,24 @@ void turnLCDoff(void)
 
 void drawPixel(uint32_t repeat, uint16_t pixNumber)
 {
-	 uint32_t i;
-	for(i=0; i<repeat; i++)
-	{
-		pio_set(DnC);
-		pio_clear(PIOC, 0x00FF);
-		pio_set(PIOC, 0x00FF & (pixNumber>>8));
-		pio_clear(Wclk);
-		nop();
-		pio_set(Wclk);
-		nop();
+    uint32_t i;
+    for(i=0; i<repeat; i++)
+    {
+	pio_set(DnC);
+	pio_clear(PIOC, 0x00FF);
+	pio_set(PIOC, 0x00FF & (pixNumber>>8));
+	pio_clear(Wclk);
+	nop();
+	pio_set(Wclk);
+	nop();
 			
-		pio_clear(PIOC, 0x00FF);
-		pio_set(PIOC, 0x00FF & pixNumber);
-		pio_clear(Wclk);
-		nop();
+	pio_clear(PIOC, 0x00FF);
+	pio_set(PIOC, 0x00FF & pixNumber);
+	pio_clear(Wclk);
+	nop();
 		
-		pio_set(Wclk);
-		nop();
-		
+	pio_set(Wclk);
+	nop();	
 	}
 }
 
